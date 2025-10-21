@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DOGTECH - A loja dos gamers</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-container"><img src="DogTech.png" alt="LOGO" /></div>
+      <div class="cabeçalho">
+        <h1>DOGTECH</h1>
+        <p class="slogan">
+          Conectando você ao melhor em hardware e periféricos
+        </p>
+      </div>
+      <div class="search-bar">
+        <input
+          type="text"
+          placeholder="Buscar produtos, marcas..."
+          class="search-input"
+        />
+        <button class="search-btn">🔍</button>
+      </div>
+      <div class="user-actions">
+        <a href="#" class="icon">Login</a>
+        <a href="#" class="icon">Carrinho 🛒</a>
+      </div>
+    </header>
+    <main>
+    <div class="titulo pagina destaque">
+      <h2> PRODUTOS EM DESTAQUE :)</h2>
+    </div>
+      <div class="produtos-container">
+        <div class="produto-card" id="teclados">
+          
+            <img
+              src="https://images9.kabum.com.br/produtos/fotos/706639/teclado-mecanico-gamer-msi-strike-600-rgb-switch-silencioso-usb-2-0-us-preto-strike600_1747051181_gg.jpg"
+              alt="Teclado Mecânico"
+              />
+            <h3>Teclado Mecânico Gaming K-Strike</h3>
+            <p>Switches vermelhos, RGB, estrutura em alumínio</p>
+            <span class="preco">R$ 349,90</span>
+            <button class="btn-comprar">Comprar</button>
+          
+        </div>
+
+        <div class="produto-card" id="mouses">
+          
+            <img
+              src="https://i.zst.com.br/thumbs/49/b/32/-1516731200.jpg"
+              alt="Mouse Gamer"
+            />
+            <h3>Mouse Gamer RazerX Pro</h3>
+            <p>Sensor 16000 DPI, iluminação personalizável</p>
+            <span class="preco">R$ 199,90</span>
+            <button class="btn-comprar">Comprar</button>
+          
+        </div>
+        <div class="produto-card" id="teclados">
+          
+            <img
+              src="https://m.media-amazon.com/images/I/51So7GoGvxL.jpg"
+              alt="Ryzen 5 5600G"
+            />
+            <h3>Processador Ryzen 5 5600G</h3>
+            <p>6 núcleos, 4.4 GHz boost</p>
+            <span class="preco">R$ 500,00</span>
+            <button class="btn-comprar">Comprar</button>
+          
+        </div>
+
+        
+        <div class="produto-card" id="teclados">
+          
+            <img
+              src="https://m.media-amazon.com/images/I/81OjMNoG9FL._AC_SX679_.jpg"
+              alt="placa de video rx 580"
+            />
+            <h3>Placa de Vídeo AMD Radeon RX580</h3>
+            <p>8Gb, 2048SP, GDDR5, 256 bits</p>
+            <span class="preco">R$ 819,90</span>
+            <button class="btn-comprar">Comprar</button>
+          
+        </div>
+
+       <div class="produto-card" id="monitores">
+        
+          <img
+            src="https://m.media-amazon.com/images/I/71ZhNV7OJ1L.jpg"
+            alt="Monitor 27"
+          />
+          <h3>Monitor 27 QHD 144Hz</h3>
+          <p>2560x1440, painel IPS, 144Hz</p>
+          <span class="preco">R$ 1.899,00</span>
+          <button class="btn-comprar">Comprar</button>
+        
+      </div>
+
+        <!-- Repita para as outras categorias: placas-mãe, VGA, fontes, armazenamento -->
+      </div>
+
+      <h2>Todos os produtos</h2>
+      <div class="produtos-container todos-produtos">
+        <div class="produto-card">
+          <img
+            src=""
+            alt="Produto"
+          />
+          <h3>Nome do Produto</h3>
+          <p>Descrição resumida do produto</p>
+          <span class="preco">R$ 199,99</span>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+
+        <div class="produto-card">
+          <img
+            src=""
+            alt="Produto"
+          />
+          <h3>Nome do Produto</h3>
+          <p>Descrição resumida do produto</p>
+          <span class="preco">R$ 199,99</span>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+
+
+        <div class="produto-card">
+          <img
+            src=""
+            alt="Produto"
+          />
+          <h3>Nome do Produto</h3>
+          <p>Descrição resumida do produto</p>
+          <span class="preco">R$ 199,99</span>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+        
+        <!-- Repita quantos quiser -->
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        &copy; <span id="year"></span> DOGTECH – Todos os direitos reservados
+      </p>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
