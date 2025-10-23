@@ -4,129 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Detalhes do Produto</title>
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      background-color: #121212;
-      color: #fff;
-      margin: 0;
-      padding: 0;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 50px auto;
-      padding: 20px;
-      background-color: #1f1f1f;
-      border-radius: 12px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    }
-
-    img {
-      width: 100%;
-      border-radius: 12px;
-      margin-bottom: 20px;
-    }
-
-    h1 {
-      color: #ff4500;
-      margin-bottom: 15px;
-    }
-
-    p {
-      font-size: 1rem;
-      color: #ccc;
-      margin-bottom: 20px;
-    }
-
-    .preco {
-      font-size: 1.3rem;
-      font-weight: bold;
-      color: #ff4500;
-      margin-bottom: 20px;
-      display: block;
-    }
-
-    .btn-comprar {
-      background-color: #ff4500;
-      color: #fff;
-      border: none;
-      padding: 12px 20px;
-      border-radius: 8px;
-      font-weight: bold;
-      cursor: pointer;
-      text-decoration: none;
-    }
-
-    .btn-comprar:hover {
-      background-color: #e03e00;
-    }
-  </style>
+  <link rel="stylesheet" href="style-produto.css" />
+  
 </head>
 <body>
   <div class="container">
     <img id="produto-img" src="" alt="Produto" />
+     <div class="info">
     <h1 id="produto-nome">Produto</h1>
     <p id="produto-desc">Descrição do produto</p>
-    <span class="preco" id="produto-preco">R$ 0,00</span>
+    <span id="produto-preco">R$ 0,00</span>
     <a href="#" class="btn-comprar">Comprar Agora</a>
   </div>
+  </div>
 
-  <script>
-    const produtos = {
-      "kit-teclado-mouse": {
-        nome: "Kit Teclado + Mouse",
-        desc: "Combo gamer com teclado mecânico e mouse RGB.",
-        preco: "R$ 299,99",
-        img: "https://img.terabyteshop.com.br/produto/g/combo-gamer-teclado-emouse-cooler-master-ms-111-semi-mecanico-rgb-ms-111-kkmf1-br_86267.jpg"
-      },
-      "monitor": {
-        nome: "Monitor",
-        desc: "Monitor 27” Full HD 144Hz, ideal para games competitivos.",
-        preco: "R$ 1.199,99",
-        img: "https://images-cdn.ubuy.co.in/64e86a8c5f2aaf2ffc53287d-lg-27-ultragear-qhd-1ms-240hz-gaming.jpg"
-      },
-      "placa-mae": {
-        nome: "Placa Mãe",
-        desc: "Placa mãe ATX com suporte para processadores de última geração.",
-        preco: "R$ 899,99",
-        img: "https://http2.mlstatic.com/D_NQ_NP_2X_956369-MLA95351287545_102025-F.webp"
-      },
-      "adaptador-wireless": {
-        nome: "Adaptador Wireless",
-        desc: "Adaptador Wi-Fi 6, super rápido e estável.",
-        preco: "R$ 149,99",
-        img: "https://coopera.vtexassets.com/arquivos/ids/56846097-800-auto?v=638869827597170000&width=800&height=auto&aspect=true"
-      },
-      "mousepad": {
-        nome: "Mousepad",
-        desc: "Mousepad grande RGB, ideal para movimentos precisos.",
-        preco: "R$ 79,99",
-        img: "https://i5.walmartimages.com/asr/12d65dac-8414-4af1-a2d1-db72916c568b.6252241516ce598f7c7e7e5403bbe569.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF"
-      },
-      "headset": {
-        nome: "Headset",
-        desc: "Headset gamer com som surround e microfone ajustável.",
-        preco: "R$ 249,99",
-        img: "https://static.mundomax.com.br/produtos/70530/550/1.webp"
-      }
-    };
-
-    const params = new URLSearchParams(window.location.search);
-    const id = params.get('id');
-    const produto = produtos[id];
-
-    if (produto) {
-      document.getElementById('produto-img').src = produto.img;
-      document.getElementById('produto-nome').textContent = produto.nome;
-      document.getElementById('produto-desc').textContent = produto.desc;
-      document.getElementById('produto-preco').textContent = produto.preco;
-    } else {
-      document.getElementById('produto-nome').textContent = "Produto não encontrado";
-      document.getElementById('produto-desc').textContent = "";
-      document.getElementById('produto-preco').textContent = "";
-      document.getElementById('produto-img').style.display = "none";
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
