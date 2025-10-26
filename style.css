@@ -37,29 +37,31 @@ header {
   color: #ffd9c9;
 }
 
-.search-bar {
-  flex: 1;
+.search-bar form {
   display: flex;
-  max-width: 600px;
-  margin: 0 40px;
-}
-
-.search-input {
   flex: 1;
-  padding: 10px 14px;
-  border-radius: 6px 0 0 6px;
-  border: none;
-  font-size: 15px;
+  /* ocupa todo espaço disponível */
+  max-width: 600px;
+  /* opcional: limita o tamanho */
+  margin: 0 20px;
+  /* espaço entre logo e botões */
 }
 
-.search-btn {
-  padding: 10px 14px;
+.search-bar input {
+  flex: 1;
+  /* ocupa todo espaço do form */
+  padding: 8px 12px;
   border: none;
-  border-radius: 0 6px 6px 0;
-  font-weight: 600;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
+}
+
+.search-bar button {
+  padding: 8px 12px;
+  background-color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
   cursor: pointer;
-  background: #fff;
-  color: #ff3c00;
 }
 
 .user-actions .icon {
